@@ -16,10 +16,13 @@ let SamsungGalaxy10: Mobile = new Mobile("Samsung Galaxy 10",
 "Galaxy 10", "Samsung", 64, "Negro", true, 3, 499);
 
 //Modificar Nokia 3210
-Nokia3210.cameraNumber = 4;
-Nokia3210.is5G = true;
+Nokia3210.setCameraNumber(4);
+Nokia3210.setIs5G(true);
 
-//Mostrar atributos de los objetos
-console.log(Nokia3210);
-console.log(Iphone3G);
-console.log(SamsungGalaxy10);
+//Crear array de objetos de la clase Mobile
+let arrayMobile:Mobile[] = [Nokia3210, Iphone3G, SamsungGalaxy10];
+
+//Mostrar los atributos de cada uno de los objetos del array
+for (let i = 0; i < arrayMobile.length; i++) {
+    arrayMobile[i].printAll();
+}
