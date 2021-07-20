@@ -27,55 +27,55 @@ export class Mobile
         }
     
     //Métodos
-    getName():string {
+    public getName():string {
         return this.name;
     }
-    getModel():string {
+    public getModel():string {
         return this.model;
     }
-    getTradeMark():string {
+    public getTradeMark():string {
         return this.trademark;
     }
-    getSdSize():number {
+    public getSdSize():number {
         return this.sdSize;
     }
-    getColor():string {
+    public getColor():string {
         return this.color;
     }
-    getIs5G():boolean {
+    public getIs5G():boolean {
         return this.is5G;
     }
-    getCameraNumber():number {
+    public getCameraNumber():number {
         return this.cameraNumber;
     }
-    getPrice():number {
+    public getPrice():number {
         return this.price;
     }
-    setName(name:string) {
+    public setName(name:string) {
         this.name = name;
     }
-    setModel(model:string) {
+    public setModel(model:string) {
         this.model = model;
     }
-    setTradeMark (trademark:string) {
+    public setTradeMark (trademark:string) {
         this.trademark = trademark;
     }
-    setSdSize(sdSize:number) {
+    public setSdSize(sdSize:number) {
         this.sdSize = sdSize;
     }
-    setColor(color:string) {
+    public setColor(color:string) {
         this.color = color;
     }
-    setIs5G(is5G:boolean) {
+    public setIs5G(is5G:boolean) {
         this.is5G = is5G;
     }
-    setCameraNumber(cameraNumber:number) {
+    public setCameraNumber(cameraNumber:number) {
         this.cameraNumber = cameraNumber;
     }
-    setPrice(price:number) {
+    public setPrice(price:number) {
         this.price = price;
     }
-    printAll() {
+    public printAll() {
         console.log("The characteristics of the mobile " +
         this.name + " are: " + "\n" + "Name: " + this.name + "\n" +
         "Model: " + this.model + "\n"+  "Trademark: " 
