@@ -30,14 +30,24 @@ let libreriaMobiles: MobileLibrary = new MobileLibrary (
 
 //Test metodos de la clase Mobile Library
 //obtener el nombre
-console.log(libreriaMobiles.getName());
+console.log("Obtener el nombre de la librería.");
+console.log(libreriaMobiles.getName() + "\n");
 //Cambiar el nombre
-console.log(libreriaMobiles.setName("Libreria personal"));
+libreriaMobiles.setName("Libreria personal");
+console.log("Cambiar el nombre de la librería.");
+console.log(libreriaMobiles.getName() + "\n");
 //Obtener la localización
-console.log(libreriaMobiles.getLocation());
+console.log("Obtener la localización de la librería.");
+console.log(libreriaMobiles.getLocation() + "\n");
 //Cambiar la localización
-console.log(libreriaMobiles.setLocation("Lisboa (Portugal)"));
+console.log("Cambiar la localización de la librería.");
+libreriaMobiles.setLocation("Lisboa (Portugal)");
+console.log(libreriaMobiles.getLocation() + "\n");
 //Obtener los mobiles
+console.log("Obtener información de los mobiles que hay "
++ "en la librería.")
 console.log(libreriaMobiles.getMobiles());
+console.log();
 //Obtener el precio total de los mobiles de la librería
-console.log(libreriaMobiles.totalPriceCalculation());
+console.log("Obtener el precio total de la librería.")
+console.log(libreriaMobiles.totalPriceCalculation()+ "\n");
