@@ -48,6 +48,6 @@ console.log("Obtener información de los mobiles que hay "
 + "en la librería.")
 console.log(libreriaMobiles.getMobiles());
 console.log();
-//Obtener el precio total de los mobiles de la librería
-console.log("Obtener el precio total de la librería.")
-console.log(libreriaMobiles.totalPriceCalculation()+ "\n");
+//Obtener todos los atributos de la clase Mobile Library según se pide
+console.log("Obtener todos los atributos de la clase Mobile Library.");
+libreriaMobiles.printLibrary();
