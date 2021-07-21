@@ -54,17 +54,7 @@ export class MobileLibrary
     public printLibrary () {
         console.log("\n" + "This is all my mobiles: ");
         for (let i = 0; i < this.mobiles.length; i++) {
-            console.log("The caracteristics od the mobile " +
-            this.mobiles[i].getName() + " are: ");
-            console.log(" - Name: " + this.mobiles[i].getName());
-            console.log(" - Model: " + this.mobiles[i].getModel());
-            console.log(" - Trademark: " + 
-            this.mobiles[i].getTradeMark());
-            console.log(" - SD Size (GB): " +
-            this.mobiles[i].getSdSize());
-            console.log(" - Is 5G?: " + this.mobiles[i].getIs5G());
-            console.log(" - Number of Camaremas: " + 
-            this.mobiles[i].getCameraNumber()+ "\n");
+           this.mobiles[i].printAll();
         }
         console.log("Price overall: " + this.getTotalPrice());
     }
